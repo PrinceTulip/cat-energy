@@ -2,16 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fabf2ebc-e028-4a1f-8a6a-2105d7386677" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/index.html" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sass/blocks/_header.scss" afterPath="$PROJECT_DIR$/src/sass/blocks/_header.scss" />
-      <change beforePath="$PROJECT_DIR$/sass/main.scss" afterPath="$PROJECT_DIR$/src/sass/main.scss" />
-      <change beforePath="$PROJECT_DIR$/sass/settings/_basic.scss" afterPath="$PROJECT_DIR$/src/sass/settings/_basic.scss" />
-      <change beforePath="$PROJECT_DIR$/sass/settings/_fonts.scss" afterPath="$PROJECT_DIR$/src/sass/settings/_fonts.scss" />
-      <change beforePath="$PROJECT_DIR$/sass/settings/_mixin.scss" afterPath="$PROJECT_DIR$/src/sass/settings/_mixin.scss" />
-      <change beforePath="$PROJECT_DIR$/sass/settings/_normalize.scss" afterPath="$PROJECT_DIR$/src/sass/settings/_normalize.scss" />
-      <change beforePath="$PROJECT_DIR$/sass/settings/_variables.scss" afterPath="$PROJECT_DIR$/src/sass/settings/_variables.scss" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -139,7 +130,7 @@
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="398" />
     <option name="y" value="264" />
     <option name="width" value="1154" />
@@ -257,15 +248,15 @@
       <updated>1511632645155</updated>
       <workItem from="1511632648148" duration="1764000" />
       <workItem from="1529927788717" duration="224000" />
-      <workItem from="1529928124820" duration="12087000" />
+      <workItem from="1529928124820" duration="12208000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14075000" />
+    <option name="totallyTimeSpent" value="14196000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
+    <frame x="-8" y="-8" width="1696" height="1026" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16646563" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -275,7 +266,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32997763" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4194631" sideWeight="0.49758744" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4194631" sideWeight="0.49758744" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
