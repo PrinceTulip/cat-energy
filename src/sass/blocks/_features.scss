@@ -1,0 +1,109 @@
+.section-features-blocks {
+  position: relative;
+  background: $gray;
+  min-width: rem(570px);
+  margin-right: rem(80px);
+  padding: rem(40px) rem(50px);
+  margin-bottom: rem(80px);
+
+  &::after {
+    content: '';
+    position: absolute;
+    width: rem(100px);
+    height: rem(100px);
+    top: rem(45px);
+    left:  rem(38px);
+    background-color: $green;
+    border-radius: 50%;
+    z-index: 1;
+  }
+
+}
+
+.section-features-blocks--correct {
+  position: relative;
+  background: $gray;
+  min-width: rem(570px);
+  margin-right: rem(80px);
+  padding: rem(60px) rem(50px);
+  margin-bottom: rem(80px);
+
+  &::after {
+    content: '';
+    position: absolute;
+    width: rem(100px);
+    height: rem(100px);
+    top: 45px;
+    left:  68px;
+    background-color: $green;
+    border-radius: 50%;
+    z-index: 1;
+  }
+
+}
+
+.section-features__icon {
+  z-index: 2;
+  padding-right: rem(80px);
+  padding-bottom: rem(35px);
+}
+
+.section-features__title {
+  font-size: rem(36px);
+  padding-top: rem(40px);
+  font-family: $oswald;
+  color: $black;
+  text-transform: uppercase;
+}
+
+.section-features__title--correct {
+  font-size: rem(36px);
+  padding-top: rem(15px);
+  font-family: $oswald;
+  color: $black;
+  text-transform: uppercase;
+
+}
+
+.section-features__text {
+  font-size: rem(16px);
+  font-family: $arial;
+  padding-bottom: rem(35px);
+  color: #444444;
+}
+
+.section-features__text--correct {
+  margin-top: 15px;
+}
+
+.section-features__link {
+  position: relative;
+  font-size: rem(20px);
+  font-family: $oswald;
+  color: $black;
+  text-transform: uppercase;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top:  15px;
+    right: -40px;
+    width: 17px;
+    height: 2px;
+    background-color: #444444;
+
+    &:hover {
+      border: 6px solid transparent; border-left: 6px solid $white;
+    }
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    right: -50px;
+    width: 6px;
+    height: 11px;
+    border: 6px solid transparent; border-left: 6px solid #444444;
+  }
+}

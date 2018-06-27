@@ -1,29 +1,138 @@
-.header-main-row {
+.main-section {
+  position: relative;
+  margin-bottom: rem(80px);
+
+  &::after {
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    top: rem(-50px);
+    right: 0;
+    background: url("../img/index-bg.png") no-repeat ;
+    background-size: cover;
+    z-index: -1;
+  }
+
+}
+
+.main-header__left {
+  width: 70%;
+}
+
+.main-header__right {
+  width: 30%;
+}
+
+
+.main-header-row {
   justify-content: space-between;
-  margin-top: 50px;
+  margin-top: rem(50px);
+}
+
+.logo:hover {
+  opacity: 0.7;
+
+  &:active {
+    opacity: 0.4;
+  }
+
+}
+
+.navigation {
+  z-index: 2;
 }
 
 .navigation__list {
   display: flex;
   list-style: none;
+  white-space: nowrap;
+  text-align: right;
+
+  padding: 0;
+
+}
+
+.navigation__item--active {
+
+  .navigation__link {
+
+    &::after {
+      position: absolute;
+      content: '';
+      bottom: rem(-12px);
+      left: rem(1px);
+      width: 100%;
+      height: rem(2px);
+      background: $white;
+    }
+  }
+
 }
 
 .navigation__link {
   position: relative;
-  margin-right: 37px;
-  color: $black;
-  font-size: 20px;
+  margin-right: rem(37px);
+  color: $white;
+  font-size: rem(20px);
   text-decoration: none;
   text-transform: uppercase;
 
-  &::after {
-    position: absolute;
-    content: '';
-    bottom: -12px;
-    left: 1px;
-    width: 100%;
-    height: 2px;
-    background: $black;
+
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 
 }
+
+.main-first-row {
+  margin-top: rem(100px);
+}
+
+.main-first__title {
+  font-size: rem(60px);
+  line-height: rem(60px);
+  margin-bottom: rem(37px);
+  color: $black;
+  font-family: $oswald;
+}
+
+.main-first__text {
+  font-size: rem(20px);
+  color: $black;
+  font-family: $oswald;
+  text-transform: uppercase;
+  margin-bottom: rem(55px);
+}
+
+.main-first__button {
+  padding: rem(17.5px) rem(51px);
+  font-size: rem(20px);
+
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    color: rgba(192,192,192,0.7);
+  }
+}
+
+.main-first__left {
+  margin-left: rem(80px);
+
+}
+
+.main-first__right {
+  z-index: 2;
+  margin-left: rem(-48px);
+}
+
+
+
+
