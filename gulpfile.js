@@ -8,8 +8,8 @@ const cleanCSS = require('gulp-cleancss');
 //const autoprefixer = require('gulp-autoprefixer');
 //const rigger = require('gulp-rigger');
 //const tinypng = require('gulp-tinypng-compress');
-//const svgSprite = require('gulp-svg-sprite');
-//const svgmin = require('gulp-svgmin');
+const svgSprite = require('gulp-svg-sprite');
+const svgmin = require('gulp-svgmin');
 const cheerio = require('gulp-cheerio');
 const replace = require('gulp-replace');
 
@@ -54,36 +54,36 @@ function img() {
     return gulp.src(paths.src + 'img/**/*')
         .pipe(gulp.dest(paths.build + "img"));
 }
-// const config = {
-//     mode: {
-//         symbol: {
-//             sprite: "sprite.svg",
-//         }
-//     }
-// };
- // function sprite() {
- //     return gulp.src(paths.src + 'img/*.svg')
- //         .pipe(cheerio({
- //             run: function($) {
- //                 $('use').removeAttr('xlink:href');
- //                 $('[fill]').removeAttr('fill');
- //                 $('[stroke]').removeAttr('stroke');
- //                 $('[style]').removeAttr('style');
- //             },
- //         }))
- //         // минифицируем svg
- //         .pipe(svgmin({
- //             js2svg: {
- //                 pretty: true
- //             }
- //         }))
- //         // удалить все атрибуты fill, style and stroke в фигурах
- //         // cheerio плагин заменит, если появилась, скобка '&gt;', на нормальную.
- //         .pipe(replace('&gt;', '>'))
- //         // build svg sprite
- //         .pipe(svgSprite(config))
- //         .pipe(gulp.dest(paths.build + 'img'));
- // }
+ const config = {
+     mode: {
+         symbol: {
+            sprite: "sprite.svg",
+         }
+     }
+      };
+  function sprite() {
+      return gulp.src(paths.src + 'img/*.svg')
+          .pipe(cheerio({
+              run: function($) {
+                  $('use').removeAttr('xlink:href');
+                 $('[fill]').removeAttr('fill');
+                  $('[stroke]').removeAttr('stroke');
+                  $('[style]').removeAttr('style');
+              },
+          }))
+          // минифицируем svg
+          .pipe(svgmin({
+             js2svg: {
+                  pretty: true
+              }
+          }))
+          // удалить все атрибуты fill, style and stroke в фигурах
+          // cheerio плагин заменит, если появилась, скобка '&gt;', на нормальную.
+          .pipe(replace('&gt;', '>'))
+          // build svg sprite
+          .pipe(svgSprite(config))
+          .pipe(gulp.dest(paths.build + 'img/sprite/'));
+  }
 
 function fonts() {
     return gulp.src(paths.src + 'fonts/**/*')
@@ -117,7 +117,7 @@ exports.clean = clean;
 exports.watch = watch;
 exports.img = img;
 exports.fonts = fonts;
-//exports.sprite = sprite;
+exports.sprite = sprite;
 
 gulp.task('build', gulp.series(
     clean,
@@ -131,6 +131,6 @@ gulp.task('build', gulp.series(
 
 gulp.task('default', gulp.series(
     clean,
-    gulp.parallel(styles, scripts, htmls, img, fonts),
+    gulp.parallel(styles, sprite, scripts, htmls, img, fonts),
     gulp.parallel(watch, serve)
 ));
