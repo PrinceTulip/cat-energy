@@ -57,19 +57,19 @@ function img() {
  const config = {
      mode: {
          symbol: {
-            sprite: "sprite.svg",
+            sprite: "sprite.svg"
          }
      }
       };
   function sprite() {
-      return gulp.src(paths.src + 'img/*.svg')
+      return gulp.src(paths.src + 'icons/*.svg')
           .pipe(cheerio({
               run: function($) {
                   $('use').removeAttr('xlink:href');
                  $('[fill]').removeAttr('fill');
                   $('[stroke]').removeAttr('stroke');
                   $('[style]').removeAttr('style');
-              },
+              }
           }))
           // минифицируем svg
           .pipe(svgmin({
@@ -82,7 +82,7 @@ function img() {
           .pipe(replace('&gt;', '>'))
           // build svg sprite
           .pipe(svgSprite(config))
-          .pipe(gulp.dest(paths.build + 'img/sprite/'));
+          .pipe(gulp.dest(paths.build + 'icons/'));
   }
 
 function fonts() {
