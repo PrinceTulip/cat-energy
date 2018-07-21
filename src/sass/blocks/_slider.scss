@@ -7,10 +7,12 @@
 
 .slider__left {
   width: rem(432px);
+  margin-right: rem(180px);
 }
 
 .slider__right {
   min-width: 50%;
+  margin-top: rem(-220px);
 }
 
 .slider__text {
@@ -62,6 +64,59 @@
   font-family: $oswald;
   margin-right: rem(65px);
 }
+
+.slider__right-img {
+  padding-bottom: rem(50px);
+}
+
+.slider__right-time {
+  font-family: $oswald;
+  font-size: rem(20px);
+  border-bottom: 1px dotted #bebebe;
+  margin: rem(0px) rem(24px);
+}
+
+.slider__right-line {
+  position: relative;
+  width: rem(428px);
+  height: rem(6px);
+  background-color: #dcdcdc;
+  border-radius: rem(5px);
+  margin-top: rem(15px);
+}
+
+.slider__right-button {
+  position: absolute;
+  width: rem(34px);
+  height: rem(34px);
+  background: $white;
+  border-radius: 50%;
+  cursor: pointer;
+  top: rem(-14px);
+  left: 45%;
+  box-shadow: rem(0px) rem(2px) rem(5px) rgba(0, 0, 0, 0.15);
+
+  &:hover {
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.25);
+  }
+
+  &:active {
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.3);
+  }
+
+  &::after {
+    position: absolute;
+    content: '';
+    width: rem(8px);
+    height: rem(8px);
+    background: $green;
+    top: rem(13px);
+    left: rem(13px);
+    border-radius: rem(5px);
+  }
+
+}
+
 
 
 
